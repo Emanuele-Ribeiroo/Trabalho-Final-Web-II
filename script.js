@@ -90,8 +90,8 @@ async function showBooksSlider() {
             slider_html += `<div class='slideItem'>`; 
             slider_html += `<div class='items'>`;
             slider_html += `<div class='textos'>`;
-            slider_html += `<p class='titulo'>${title}</p>`;
-            slider_html += `<p>${authors}</p>`;
+            slider_html += `<p class='tituloS'>${title}</p>`;
+            slider_html += `<p class='autor'>${authors}</p>`;
             slider_html += `<p>${categories}</p>`;
             slider_html += `<p>${description}</p>`;
             slider_html += `</div>`;

@@ -7,7 +7,7 @@ header {
 
 .busca {
     position: relative; 
-    width: 300px;  
+    width: 400px;  
 }
 
 #pesquisa {
@@ -110,14 +110,34 @@ header {
     padding: 20px;
     background-color: rgb(249, 119, 141);
     color: white;
+    font-size: large;
+}
+
+.menu a:hover{
+    color: pink;
+}
+
+.menuItem{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menuItem img{
+    width: 23px;
+}
+
+.links{
+    display: flex;
+    gap: 15px;
 }
 
 /* Slider */
 .slider { 
-    height: 270px;
-    padding: 20px;
+    height: 300px;
+    padding: 32px;
     margin-bottom: 30px; /* Espaço entre o slider e os cards */
-    background-color: rgb(253, 230, 234); /* Cor de fundo do slider */
+    background: linear-gradient(180deg, rgb(253, 230, 234) 0%, rgb(248, 176, 188) 100%); /* Cor de fundo do slider */
     display: flex;
     justify-content: center; /* Centraliza o conteúdo do slider */
     align-items: center;
@@ -125,28 +145,46 @@ header {
 }
 
 .textos{
-    width: 65%;
+    width: 50%;
+    line-height: 18px;
+    color: #828181;
 }
 
 .items{
     display: flex;
     font-size: 14px;
     justify-content: center ;
+    align-items: center;
+    gap: 30px;
 }
 
 .slideItem {  /* Os itens do slider ocupam a largura total do contêiner */
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     text-align: center;
-    margin-bottom: 15px; /* Espaço entre os itens do slider */
     display: none;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .slideItem img{
-        width: auto; /* A imagem ocupa toda a largura do card */
+        width: 170px; /* A imagem ocupa toda a largura do card */
         height: auto; /* Altura automática para manter a proporção da imagem */
         object-fit: contain; /* A imagem se ajusta ao espaço, mantendo a proporção */
     }
+
+.tituloS{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.autor{
+    font-style: italic;
+}
 
 /* Adicionando estilo ao slider e aos cards responsivamente */
 @media screen and (min-width: 641px) {
