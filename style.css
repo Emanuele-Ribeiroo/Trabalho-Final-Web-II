@@ -1,0 +1,164 @@
+header {
+    background-color: pink;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.busca {
+    position: relative; 
+    width: 300px;  
+}
+
+#pesquisa {
+    width: 100%;
+    padding: 10px 40px 10px 40px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.search-icon, .close-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+}
+
+.search-icon {
+    left: 10px; 
+}
+
+.close-icon {
+    right: 10px;
+    display: none;  
+}
+
+#pesquisa:not(:placeholder-shown) + .close-icon {
+    display: block;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Para permitir que os cards quebrem para a linha seguinte */
+    justify-content: center; /* Centraliza os cards na página */
+    gap: 20px; /* Adiciona espaçamento entre os cards */
+}
+
+.card {
+    text-align: center;
+    width: 180px; /* Tamanho fixo do card */
+    min-height: 350px; /* Garante que o card tenha uma altura mínima */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos dentro do card em coluna */
+    justify-content: space-between; /* Garante que o conteúdo e a imagem não se sobreponham */
+    margin: 10px;
+    border: 1px solid #ddd; /* Borda suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Evita que o conteúdo saia do card */
+    background-color: #f7c6e0; /* Rosa claro para o fundo do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para o card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Move o card para cima quando o mouse passa por cima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte para dar o efeito de elevação */
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%; /* A imagem ocupa toda a largura do card */
+    height: auto; /* Altura automática para manter a proporção da imagem */
+    max-height: 200px; /* Limita a altura máxima da imagem */
+    object-fit: contain; /* A imagem se ajusta ao espaço, mantendo a proporção */
+    border-bottom: 1px solid #ddd; /* Borda separando a imagem do conteúdo */
+}
+
+.conteudo {
+    background-color: #fff; /* Fundo branco para o conteúdo */
+    padding: 12px;
+    flex-grow: 1; /* Garante que o conteúdo cresça para preencher o card */
+    display: flex;
+    flex-direction: column; /* Organiza os itens do conteúdo em coluna */
+    justify-content: space-between; /* Garante que o texto não se acumule */
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333; /* Cor mais escura para o título */
+}
+
+.conteudo p {
+    margin: 4px 0;
+    font-size: 12px;
+    color: #555; /* Cor mais suave para o texto */
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Menu */
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(249, 119, 141);
+    color: white;
+}
+
+/* Slider */
+.slider { 
+    height: 270px;
+    padding: 20px;
+    margin-bottom: 30px; /* Espaço entre o slider e os cards */
+    background-color: rgb(253, 230, 234); /* Cor de fundo do slider */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do slider */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens do slider se ajustem em várias linhas, se necessário */
+}
+
+.textos{
+    width: 65%;
+}
+
+.items{
+    display: flex;
+    font-size: 14px;
+    justify-content: center ;
+}
+
+.slideItem {  /* Os itens do slider ocupam a largura total do contêiner */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 15px; /* Espaço entre os itens do slider */
+    display: none;
+}
+
+.slideItem img{
+        width: auto; /* A imagem ocupa toda a largura do card */
+        height: auto; /* Altura automática para manter a proporção da imagem */
+        object-fit: contain; /* A imagem se ajusta ao espaço, mantendo a proporção */
+    }
+
+/* Adicionando estilo ao slider e aos cards responsivamente */
+@media screen and (min-width: 641px) {
+    .secao-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);  /* 4 cards por linha */
+    }
+
+}
