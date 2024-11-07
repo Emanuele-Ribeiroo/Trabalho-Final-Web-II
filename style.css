@@ -186,6 +186,57 @@ header {
     font-style: italic;
 }
 
+footer {
+    margin-top: 50px;
+    background-color: rgb(249, 119, 141);
+    padding: 40px;
+    color: white;
+}
+
+hr {
+    border: 1px solid #fff;
+    margin: 20px 0;
+}
+
+.rodapeT {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+
+.rodapeT p {
+    margin: 0;
+}
+
+.rodapeL {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.linksR {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.linksR p {
+    margin: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.linksR p:hover {
+    color: #ffb6c1; /* cor de destaque no hover */
+}
+
 /* Adicionando estilo ao slider e aos cards responsivamente */
 @media screen and (min-width: 641px) {
     .secao-cards {
