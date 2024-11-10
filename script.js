@@ -1,6 +1,17 @@
 const apiKey = "AIzaSyBe9IdrSKUvy1qpRUshVc037upXolg95XU";
 
 const pesquisa = document.querySelector('#pesquisa');
+
+const pesquisaInput = document.getElementById('pesquisa');
+const closeIcon = document.querySelector('.close-icon');
+
+//Função para limpar o input ao clicar no ícone do X
+closeIcon.addEventListener('click', () => {
+    pesquisaInput.value = ''; 
+    pesquisaInput.focus();
+});
+
+//Função para pesquisar
 pesquisa.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         event.preventDefault();
@@ -54,8 +65,8 @@ async function showBooksData(pesquisaLivro) {
 }
 
 window.addEventListener('DOMContentLoaded', async () => {
-    const randomBooksData = await getBooksData('fiction');  // Buscar livros aleatórios (ou uma pesquisa inicial qualquer)
-    showBooksData(randomBooksData);  // Exibir os livros na tela
+    const randomBooksData = await getBooksData('fiction'); 
+    showBooksData(randomBooksData); 
 });
 
 // Função para buscar livros (com limite de 5 resultados)
@@ -115,7 +126,6 @@ async function showBooksSlider() {
         // Oculta o item atual
         items[interval].style.display = 'none';
 
-        // Incrementa o índice
         interval++;
 
         // Se atingiu o final, volta para o início

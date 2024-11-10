@@ -186,6 +186,8 @@ header {
     font-style: italic;
 }
 
+/* Rodapé */
+
 footer {
     margin-top: 50px;
     background-color: rgb(249, 119, 141);
@@ -217,7 +219,6 @@ hr {
     justify-content: space-evenly;
     padding: 20px 0;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .linksR {
