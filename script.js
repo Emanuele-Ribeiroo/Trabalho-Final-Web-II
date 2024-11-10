@@ -2,13 +2,14 @@ const apiKey = "AIzaSyBe9IdrSKUvy1qpRUshVc037upXolg95XU";
 
 const pesquisa = document.querySelector('#pesquisa');
 
-const pesquisaInput = document.getElementById('pesquisa');
 const closeIcon = document.querySelector('.close-icon');
+
+const searchIcon = document.querySelector('.search-icon');
 
 //Função para limpar o input ao clicar no ícone do X
 closeIcon.addEventListener('click', () => {
-    pesquisaInput.value = ''; 
-    pesquisaInput.focus();
+    pesquisa.value = ''; 
+    pesquisa.focus();
 });
 
 //Função para pesquisar
@@ -19,6 +20,14 @@ pesquisa.addEventListener('keypress', function(event) {
         console.log(pesquisaLivro);  
         showBooksData(pesquisaLivro);  // Passa o valor da pesquisa para a função
     }
+});
+
+//Função para pesquiar quando clicar no ícone da lupa na barra de pesquisa
+searchIcon.addEventListener('click', function(event){
+    event.preventDefault();
+    const pesquisaLivro = pesquisa.value;
+    console.log(pesquisaLivro);  
+    showBooksData(pesquisaLivro);
 });
 
 // Função para buscar livros

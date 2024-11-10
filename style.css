@@ -29,11 +29,13 @@ header {
 
 .search-icon {
     left: 10px; 
+    cursor: pointer;
 }
 
 .close-icon {
     right: 10px;
-    display: none;  
+    display: none; 
+    cursor: pointer; 
 }
 
 #pesquisa:not(:placeholder-shown) + .close-icon {
