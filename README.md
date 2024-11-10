@@ -44,12 +44,14 @@ HTML (index.html):
 
 Contém os elementos da interface do usuário: barra de pesquisa, menu, área para exibição dos livros e rodapé.
 A barra de pesquisa é composta por um input de texto e ícones para buscar e limpar a pesquisa.
+
 CSS (style.css):
 
 O estilo da página usa cores suaves e layouts responsivos.
 A barra de pesquisa tem ícones de pesquisa e de fechamento.
 Cards de livros têm bordas arredondadas, uma sombra suave e imagens ajustadas ao tamanho do card.
 O slider exibe livros de maneira interativa e automática, trocando de item a cada 3 segundos.
+
 JavaScript (script.js):
 
 Pesquisa de Livros: Quando o usuário pressiona a tecla Enter ou clica na lupa, a função showBooksData() é chamada, que faz a requisição para a API Google Books e exibe os resultados.
