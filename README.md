@@ -1,4 +1,4 @@
-![127 0 0 1_5500_ (3)](https://github.com/user-attachments/assets/e28bf8b5-6630-4a82-a158-4175ad8218bd)API Google Books - Pesquisa de Livros
+API Google Books - Pesquisa de Livros
 
 Este é um projeto que utiliza a API Google Books para realizar a pesquisa de livros e exibir os resultados em uma página web interativa. O usuário pode pesquisar por livros e visualizar informações como título, 
 autor, categorias e até imagens dos livros. A aplicação também apresenta um slider com livros destacados. O projeto foi desenvolvido para fins acadêmicos.
