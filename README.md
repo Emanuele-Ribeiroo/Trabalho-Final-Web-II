@@ -4,7 +4,7 @@ Este é um projeto que utiliza a API Google Books para realizar a pesquisa de li
 autor, categorias e até imagens dos livros. A aplicação também apresenta um slider com livros destacados. O projeto foi desenvolvido para fins acadêmicos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Funcionalidades:
+Funcionalidades: \
 
 Pesquisa de Livros: O usuário pode digitar o nome de um livro na barra de pesquisa ou clicar no ícone de lupa para realizar a pesquisa. O resultado será exibido com informações como título, autor e categorias.
 Exibição de Resultados: Os livros encontrados são mostrados em cards interativos que incluem a imagem do livro, título, autor e categorias.
@@ -12,7 +12,7 @@ Slider de Livros Destacados: Exibe um slider com livros relacionados ao termo "J
 Responsividade: O layout é responsivo, com os cards e o slider ajustando-se automaticamente em telas menores.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Tecnologias Utilizadas:
+Tecnologias Utilizadas: \
 HTML5: Estrutura básica da página.
 CSS3: Estilos para o layout da página, incluindo a barra de pesquisa, cards e slider.
 JavaScript:
