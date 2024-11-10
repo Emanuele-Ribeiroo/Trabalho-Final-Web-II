@@ -19,6 +19,10 @@ pesquisa.addEventListener('keypress', function(event) {
         const pesquisaLivro = event.target.value;
         console.log(pesquisaLivro);  
         showBooksData(pesquisaLivro);  // Passa o valor da pesquisa para a função
+        let titulo_html = pesquisaLivro; //String que vai armazenar o resultado da busca
+        let resultadoElment = document.querySelector("#resultado")
+        resultadoElment.innerHTML = 'Resultados para: ' + titulo_html;
+        resultadoElment.style.display = 'block';
     }
 });
 
@@ -28,6 +32,10 @@ searchIcon.addEventListener('click', function(event){
     const pesquisaLivro = pesquisa.value;
     console.log(pesquisaLivro);  
     showBooksData(pesquisaLivro);
+    let titulo_html = pesquisaLivro; //String que vai armazenar o resultado da busca
+    let resultadoElment = document.querySelector("#resultado")
+    resultadoElment.innerHTML = 'Resultados para: ' + titulo_html;
+    resultadoElment.style.display = 'block';
 });
 
 // Função para buscar livros

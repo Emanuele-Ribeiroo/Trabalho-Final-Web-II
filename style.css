@@ -42,6 +42,15 @@ header {
     display: block;
 }
 
+#resultado{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(253, 84, 112);
+    display:none;
+    padding-left:350px;
+}
+
+
 .container {
     padding: 20px;
     display: flex;
