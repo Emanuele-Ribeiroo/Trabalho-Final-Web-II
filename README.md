@@ -68,8 +68,9 @@ com informações sobre os livros. Em seguida, o JavaScript processa esses dados
 
 Exemplo de Busca:
 
-Ao digitar um termo na barra de pesquisa (ex: "Harry Potter") e pressionar "Enter" ou clicar na lupa, a aplicação busca livros relacionados ao termo e exibe os resultados, 
+Ao digitar um termo na barra de pesquisa (ex: "Tolkien") e pressionar "Enter" ou clicar na lupa, a aplicação busca livros relacionados ao termo e exibe os resultados, 
 incluindo título, autor, categorias e imagens.
+![127 0 0 1_5500_ (4)](https://github.com/user-attachments/assets/db5591bc-f850-4d28-bab9-b594403101ef)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Licença:
