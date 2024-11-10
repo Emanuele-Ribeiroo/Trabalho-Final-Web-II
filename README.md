@@ -30,7 +30,7 @@ Estrutura do Projeto:
 ├── reset.css       # CSS para resetar estilos padrão do navegador \
 ├── style.css       # Estilos personalizados para o layout e design da página \
 ├── script.js       # Código JavaScript para buscar e exibir livros \
-├── imagens/        # Diretório contendo ícones e imagens usadas no projeto \
+├── imagens/        # Diretório contendo ícones e imagens usadas no projeto 
 
 index.html: Contém a estrutura HTML da página, incluindo a barra de pesquisa, slider e cards.  \
 reset.css: Aplica um reset CSS para remover margens e paddings padrão de navegadores e padronizar o estilo. \
@@ -56,7 +56,7 @@ JavaScript (script.js):
 
 Pesquisa de Livros: Quando o usuário pressiona a tecla Enter ou clica na lupa, a função showBooksData() é chamada, que faz a requisição para a API Google Books e exibe os resultados.\
 Slider de Livros: A função showBooksSlider() busca livros relacionados ao termo "Json" e os exibe em um slider que alterna entre os itens a cada 3 segundos.\
-Manipulação do DOM: O JavaScript também manipula a exibição de elementos na página, como os livros encontrados e a exibição do título da pesquisa.\
+Manipulação do DOM: O JavaScript também manipula a exibição de elementos na página, como os livros encontrados e a exibição do título da pesquisa.
 
 Como Funciona a Busca:
 
